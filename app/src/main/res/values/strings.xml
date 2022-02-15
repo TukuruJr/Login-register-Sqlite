@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Local Login-Registration Android</string>
+    <string name="app_title">Login - Registration Using Sqlite Database</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">WELCOME TO LOGIN PAGE</string>
+    <string name="user_hint">Username...</string>
+    <string name="mobile_hint">Mobile...</string>
+    <string name="password_hint">Password...</string>
+    <string name="create">Don\'t have an account, Create One?</string>
+    <string name="create_Ac">Create An Account</string>
+    <string name="email_hint">Email...</string>
+    <string name="pass1_hint">Password...</string>
+    <string name="pass2_hint">Confirm Password...</string>
+    <string name="back">Login Here?</string>
+    <string name="success">Account Created Successfully!!!</string>
+    <string name="Welcome">User Account</string>
+    <string name="edit">Edit profile</string>
+    <string name="logout">Logout</string>
+</resources>

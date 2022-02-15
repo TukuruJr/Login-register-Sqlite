@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount"
+    android:background="#ED4E88">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_Ac"
+        android:textStyle="bold|italic"
+        android:textSize="27sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/intro"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getusername"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="25dp"
+        android:hint="@string/user_hint"
+        app:startIconDrawable="@drawable/user">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornered"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getemail"
+        android:layout_below="@+id/getusername"
+        android:layout_marginTop="25dp"
+        android:hint="@string/email_hint"
+        app:startIconDrawable="@drawable/email">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornered"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getnumber"
+        android:layout_below="@+id/getemail"
+        android:layout_marginTop="25dp"
+        android:hint="@string/mobile_hint"
+        app:startIconDrawable="@drawable/phone">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornered"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getpass1"
+        android:layout_below="@+id/getnumber"
+        android:layout_marginTop="25dp"
+        android:hint="@string/pass1_hint"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornered"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getpass2"
+        android:layout_below="@+id/getpass1"
+        android:layout_marginTop="25dp"
+        android:hint="@string/pass2_hint"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornered"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/create_Ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getpass2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cornered"
+        android:text="@string/create_Ac"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_Ac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/back"
+        android:textColor="#0F6EC1"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+</RelativeLayout>

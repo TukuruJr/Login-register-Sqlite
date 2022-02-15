@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#706431">
+
+       <TextView
+           android:id="@+id/tv_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="25dp"
+           android:text="@string/login"
+           android:textColor="#FFB300"
+           android:textSize="20sp"
+           android:textStyle="bold|italic"/>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="70dp"
+           android:layout_below="@+id/tv_title"
+           android:hint="@string/user_hint"
+           app:hintTextColor="@color/purple_500"
+           android:id="@+id/getuser"
+           app:startIconDrawable="@drawable/user"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:background="@drawable/cornered"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/getpass"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/getuser"
+           android:layout_marginTop="30dp"
+           android:hint="@string/password_hint"
+           app:hintTextColor="@color/purple_500"
+           app:startIconDrawable="@drawable/password"
+           app:passwordToggleEnabled="true">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:background="@drawable/cornered"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getpass"
+        android:id="@+id/fbLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/login"/>
+
+       <TextView
+           android:id="@+id/create_user"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/fbLogin"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:text="@string/create"
+           android:textColor="@android:color/holo_blue_dark"
+           android:textSize="20sp"
+           android:textStyle="bold"/>
+
+   </RelativeLayout>
+
+</FrameLayout>
